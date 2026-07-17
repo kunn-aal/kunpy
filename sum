@@ -1,0 +1,7 @@
+user=input("enter your numbers ")
+lst=user.split(" ")
+s=0
+fist=list(map(int,lst))
+for i in range(0,len(fist)):
+    s=s+fist[i]
+print(s)

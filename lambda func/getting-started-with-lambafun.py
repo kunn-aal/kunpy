@@ -6,8 +6,8 @@ def add(num1, num2):
 -shorthand function: shorter way to write a function
 -Anonymous function: function without a name
 -single expression only"""
-
-lst = [1, 2, 3, 4, 5]
+from functools import reduce
+lst = [1, 2, 3, 4, 7,3,2,4,5,12,23,3,2,1,]
 nested_list = [[1,2,3,4], [4,5,6,7], [6,7,8]]
 
 def double_item(num):
@@ -23,5 +23,7 @@ double_lambda = list(map(lambda num: num*2,lst))
 print(double)
 print(double_lambda)
 #filter
-
+meet=list(filter(lambda n:n%2==0,double_lambda))
 #reduce
+beeble=reduce(lambda a,b : a*b,meet)
+print(beeble)

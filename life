@@ -1,7 +1,0 @@
-#function
-x=int(input("enter"))
-y=int(input("enter"))
-def multiply(x,y):
-    result=x*y
-    return result
-print(multiply(4,6))
